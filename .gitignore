@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# But not .cs files
+!*.cs
+
+# Ignore .idea folder created by JetBrains Rider
+.idea/

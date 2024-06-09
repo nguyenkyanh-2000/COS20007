@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueApplication", "QueueAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestQueueApplication", "TestQueueApplication\TestQueueApplication.csproj", "{C6184569-5103-4A9A-A006-520CE1D059CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{3FD56DF1-F1AC-46AD-B782-DC0F8E590A58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC_1710", "LC_1710\LC_1710.csproj", "{1D9710F0-EFF8-490F-B637-E63F93837E91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{C6184569-5103-4A9A-A006-520CE1D059CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6184569-5103-4A9A-A006-520CE1D059CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6184569-5103-4A9A-A006-520CE1D059CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FD56DF1-F1AC-46AD-B782-DC0F8E590A58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD56DF1-F1AC-46AD-B782-DC0F8E590A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD56DF1-F1AC-46AD-B782-DC0F8E590A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD56DF1-F1AC-46AD-B782-DC0F8E590A58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D9710F0-EFF8-490F-B637-E63F93837E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9710F0-EFF8-490F-B637-E63F93837E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9710F0-EFF8-490F-B637-E63F93837E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9710F0-EFF8-490F-B637-E63F93837E91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

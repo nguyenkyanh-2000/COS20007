@@ -1,0 +1,15 @@
+/Users/coderschool/RiderProjects/COS20007/LC_1710/bin/Debug/net8.0/LC_1710
+/Users/coderschool/RiderProjects/COS20007/LC_1710/bin/Debug/net8.0/LC_1710.deps.json
+/Users/coderschool/RiderProjects/COS20007/LC_1710/bin/Debug/net8.0/LC_1710.runtimeconfig.json
+/Users/coderschool/RiderProjects/COS20007/LC_1710/bin/Debug/net8.0/LC_1710.dll
+/Users/coderschool/RiderProjects/COS20007/LC_1710/bin/Debug/net8.0/LC_1710.pdb
+/Users/coderschool/RiderProjects/COS20007/LC_1710/obj/Debug/net8.0/LC_1710.GeneratedMSBuildEditorConfig.editorconfig
+/Users/coderschool/RiderProjects/COS20007/LC_1710/obj/Debug/net8.0/LC_1710.AssemblyInfoInputs.cache
+/Users/coderschool/RiderProjects/COS20007/LC_1710/obj/Debug/net8.0/LC_1710.AssemblyInfo.cs
+/Users/coderschool/RiderProjects/COS20007/LC_1710/obj/Debug/net8.0/LC_1710.csproj.CoreCompileInputs.cache
+/Users/coderschool/RiderProjects/COS20007/LC_1710/obj/Debug/net8.0/LC_1710.sourcelink.json
+/Users/coderschool/RiderProjects/COS20007/LC_1710/obj/Debug/net8.0/LC_1710.dll
+/Users/coderschool/RiderProjects/COS20007/LC_1710/obj/Debug/net8.0/refint/LC_1710.dll
+/Users/coderschool/RiderProjects/COS20007/LC_1710/obj/Debug/net8.0/LC_1710.pdb
+/Users/coderschool/RiderProjects/COS20007/LC_1710/obj/Debug/net8.0/LC_1710.genruntimeconfig.cache
+/Users/coderschool/RiderProjects/COS20007/LC_1710/obj/Debug/net8.0/ref/LC_1710.dll

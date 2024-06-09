@@ -6,33 +6,82 @@ namespace ShapeDrawer
 {
     public class Program
     {
+        
+        private enum ShapeKind
+        {
+            Rectangle,
+                Circle,
+                Line
+        }
         static void Main(string[] args)
         {
-            Window window = new Window("Shape Drawer", 800, 600);
-            Shape myShape = new Shape();
             
+            var kindToAdd = ShapeKind.Circle;
+            Window window = new Window("Shape Drawer", 800, 600);
+            Drawing myDrawing = new Drawing();
+
             do
             {
                 SplashKit.ProcessEvents();
                 SplashKit.ClearScreen();
                 
-                myShape.Draw();
+                if(SplashKit.KeyTyped(KeyCode.RKey))
+                {
+                    kindToAdd = ShapeKind.Rectangle;
+                }
+                if (SplashKit.KeyTyped(KeyCode.LKey))
+                {
+                    kindToAdd = ShapeKind.Line;
+                }
+                if (SplashKit.KeyTyped(KeyCode.CKey))
+                {
+                    kindToAdd = ShapeKind.Circle;
+                }
+
                 if (SplashKit.MouseClicked(MouseButton.LeftButton))
                 {
-                    myShape.X = SplashKit.MouseX();
-                    myShape.Y = SplashKit.MouseY();
+                    Shape newShape;
+                    switch (kindToAdd)
+                    {
+                        case ShapeKind.Circle:
+                            newShape = new MyCircle();
+                            newShape.X = SplashKit.MouseX();
+                            newShape.Y = SplashKit.MouseY();
+                            break;
+                        case ShapeKind.Line:
+                            newShape = new MyLine();
+                            newShape.X = SplashKit.MouseX();
+                            newShape.Y = SplashKit.MouseY();
+                            break;
+                        default:
+                            newShape = new MyRectangle();
+                            newShape.X = SplashKit.MouseX();
+                            newShape.Y = SplashKit.MouseY();
+                            break;
+                    }
+                    
+                    myDrawing.AddShape(newShape);
                 }
 
                 if (SplashKit.KeyTyped(KeyCode.SpaceKey))
                 {
-                        Point2D pt = SplashKit.MousePosition();
-                        if (myShape.IsAt(pt))
-                        {
-                            myShape.Color = SplashKit.RandomColor();
-                        }
+                    myDrawing.Background = SplashKit.RandomColor();
                 }
 
-                myShape.Draw();
+                if (SplashKit.MouseClicked(MouseButton.RightButton))
+                {
+                    myDrawing.SelectShapesAt(SplashKit.MousePosition());
+                }
+
+                if (SplashKit.KeyTyped(KeyCode.DeleteKey) || SplashKit.KeyTyped(KeyCode.BackspaceKey))
+                {
+                    foreach (Shape shape in myDrawing.SelectedShapes)
+                    {
+                        myDrawing.RemoveShape(shape);
+                    }
+                }
+
+                myDrawing.Draw();
                 SplashKit.RefreshScreen();
             } while (!window.CloseRequested);
         }
