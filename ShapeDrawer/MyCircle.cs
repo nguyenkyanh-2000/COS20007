@@ -42,4 +42,17 @@ public class MyCircle : Shape
         get { return _radius; }
         set { _radius = value; }
     }
+    
+    public override void SaveTo(StreamWriter writer)
+    {
+        writer.WriteLine("Circle");
+        base.SaveTo(writer);
+        writer.WriteLine(Radius);
+    }
+    
+    public override void LoadFrom(StreamReader reader)
+    {
+        base.LoadFrom(reader);
+        Radius = reader.ReadInteger();
+    }
 }

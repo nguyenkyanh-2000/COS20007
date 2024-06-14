@@ -3,5 +3,5 @@
   &lt;Assembly Path="/Users/coderschool/.nuget/packages/splashkit/1.1.4/lib/net8.0/SplashKitSDK.dll" /&gt;
 &lt;/AssemblyExplorer&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=981d6691_002D29b5_002D411a_002D9a98_002D2a3e5f75bb8d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestEnqueue" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Project Location="/Users/kyanh.nguyen/RiderProjects/COS20007/TestQueueApplication" Presentation="&amp;lt;TestQueueApplication&amp;gt;" /&gt;
+  &lt;Project Location="/Users/coderschool/RiderProjects/COS20007/SwinAdventureTest" Presentation="&amp;lt;SwinAdventureTest&amp;gt;" /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

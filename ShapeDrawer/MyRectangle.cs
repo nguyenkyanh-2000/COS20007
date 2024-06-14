@@ -22,6 +22,16 @@ public class MyRectangle: Shape
         _height = height;
     }
 
+    public int Width
+    {
+        get { return _width; } 
+    }
+    
+    public int Height
+    {
+        get { return _height; }
+    }
+    
     public override void Draw()
     {
         if (Selected)
@@ -39,5 +49,20 @@ public class MyRectangle: Shape
     public override bool IsAt(Point2D pt)
     {
         return SplashKit.PointInRectangle(pt, SplashKit.RectangleFrom(X, Y, _width, _height));
+    }
+
+    public override void SaveTo(StreamWriter writer)
+    {
+        writer.WriteLine("Rectangle");
+        base.SaveTo(writer);
+        writer.WriteLine(Width);
+        writer.WriteLine(Height);
+    }
+    
+    public override void LoadFrom(StreamReader reader)
+    {
+        base.LoadFrom(reader);
+        _width = reader.ReadInteger();
+        _height = reader.ReadInteger();
     }
 }

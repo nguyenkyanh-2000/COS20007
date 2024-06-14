@@ -41,5 +41,17 @@ namespace ShapeDrawer
         }
 
 
+        public override void SaveTo(StreamWriter writer)
+        {
+            writer.WriteLine("Line");
+            base.SaveTo(writer);
+            writer.WriteLine(_length);
+        }
+        
+        public override void LoadFrom(StreamReader reader)
+        {
+            base.LoadFrom(reader);
+            _length = reader.ReadInteger();
+        }
     }
 }

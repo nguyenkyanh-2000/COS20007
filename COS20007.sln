@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC_1710", "LC_1710\LC_1710.csproj", "{1D9710F0-EFF8-490F-B637-E63F93837E91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwinAdventure", "SwinAdventure\SwinAdventure.csproj", "{1A114143-D714-4CD4-AB75-D096E603EC08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwinAdventureTest", "SwinAdventureTest\SwinAdventureTest.csproj", "{D85ADA0B-D974-4C4E-80CC-AC08E4FD66EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +46,13 @@ Global
 		{1D9710F0-EFF8-490F-B637-E63F93837E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D9710F0-EFF8-490F-B637-E63F93837E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D9710F0-EFF8-490F-B637-E63F93837E91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A114143-D714-4CD4-AB75-D096E603EC08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A114143-D714-4CD4-AB75-D096E603EC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A114143-D714-4CD4-AB75-D096E603EC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A114143-D714-4CD4-AB75-D096E603EC08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D85ADA0B-D974-4C4E-80CC-AC08E4FD66EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D85ADA0B-D974-4C4E-80CC-AC08E4FD66EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D85ADA0B-D974-4C4E-80CC-AC08E4FD66EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D85ADA0B-D974-4C4E-80CC-AC08E4FD66EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

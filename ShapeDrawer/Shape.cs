@@ -1,6 +1,5 @@
 using SplashKitSDK;
 namespace ShapeDrawer;
-
 public abstract class Shape
 {
     private Color _color;
@@ -20,11 +19,24 @@ public abstract class Shape
       _y = 0.0f;
     }
 
+    public virtual void SaveTo(StreamWriter writer)
+    {
+        writer.WriteColor(Color);
+        writer.WriteLine(X);
+        writer.WriteLine(Y);
+    }
     public abstract bool IsAt(Point2D pt);
 
     public abstract void DrawOutline();
 
     public abstract void Draw();
+
+    public virtual void LoadFrom(StreamReader reader)
+    {
+        Color = reader.ReadColor();
+        X = reader.ReadInteger();
+        Y = reader.ReadInteger();
+    }
     
     public bool Selected
     {

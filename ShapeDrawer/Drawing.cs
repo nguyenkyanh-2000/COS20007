@@ -1,6 +1,7 @@
 using SplashKitSDK;
 using System.Collections.Generic;
 using ShapeDrawer;
+using System.IO;
 
 public class Drawing
 {
@@ -63,6 +64,60 @@ public class Drawing
                 }
             }
             return result;
+        }
+    }
+
+    public void Save(string filename)
+    {
+        StreamWriter writer = new StreamWriter(filename);
+        try
+        {
+            writer.WriteColor(Background);
+            writer.WriteLine(ShapeCount);
+            foreach (var shape in _shapes)
+            {
+                shape.SaveTo(writer);
+            }
+        }
+        finally
+        {
+            writer.Close();
+        }
+    }
+    
+    public void Load(string filename)
+    {
+        StreamReader reader = new StreamReader(filename);
+        try
+        {
+            Background = reader.ReadColor();
+            int count = reader.ReadInteger();
+            _shapes.Clear();
+            for (int i = 0; i < count; i++)
+            {
+                string? kind = reader.ReadLine();
+                Shape s;
+                switch (kind)
+                {
+                    case "Circle":
+                        s = new MyCircle();
+                        break;
+                    case "Rectangle":
+                        s = new MyRectangle();
+                        break;
+                    case "Line":
+                        s = new MyLine();
+                        break;
+                    default:
+                        throw new InvalidDataException("Unknown shape kind: " + kind);
+                }
+                s.LoadFrom(reader);
+                AddShape(s);
+            }
+        }
+        finally
+        {
+            reader.Close();
         }
     }
 }

@@ -81,6 +81,23 @@ namespace ShapeDrawer
                     }
                 }
 
+                if (SplashKit.KeyTyped(KeyCode.SKey))
+                {
+                    myDrawing.Save("/Users/coderschool/Desktop/TestDrawing.txt");
+                }
+                
+                if (SplashKit.KeyTyped(KeyCode.OKey))
+                {
+                    try
+                    {
+                        myDrawing.Load("/Users/coderschool/Desktop/TestDrawing.txt");
+                    }
+                    catch (Exception e)
+                    {
+                        Console.Error.WriteLine("Error loading file: {0}", e.Message);
+                    }
+                }
+                
                 myDrawing.Draw();
                 SplashKit.RefreshScreen();
             } while (!window.CloseRequested);
